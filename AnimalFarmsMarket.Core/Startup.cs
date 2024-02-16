@@ -1,5 +1,5 @@
 using System;
-
+using System.Text;
 using AnimalFarmsMarket.Core.Extensions;
 using AnimalFarmsMarket.Data;
 using AnimalFarmsMarket.Data.Profiles;
@@ -27,11 +27,18 @@ namespace AnimalFarmsMarket.Core
         {
             Configuration = configuration;
             Environment = environment;
+            ValidIssuer = configuration["Jwt:ValidIssuer"];
+            ValidAudience = configuration["Jwt:ValidAudience"];
+            IssuerSigningKey = configuration["Jwt:SecurityKey"];
         }
 
         public IConfiguration Configuration { get; }
 
         public IWebHostEnvironment Environment { get; }
+
+        public string ValidIssuer { get;} 
+        public string ValidAudience { get;} 
+        public string IssuerSigningKey { get;}
 
         // This method gets called by the runtime. Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
@@ -103,11 +110,11 @@ namespace AnimalFarmsMarket.Core
                 options.TokenValidationParameters = new TokenValidationParameters
                 {
                     ValidateIssuerSigningKey = true,
-                    IssuerSigningKey = new SymmetricSecurityKey(System.Text.Encoding.UTF8.GetBytes(Configuration.GetSection("JWTConfigurations:SecretKey").Value)),
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("IssuerSigningKey")),
                     ValidateIssuer = true,
-                    ValidIssuer = Configuration.GetSection("JWTConfigurations:Issuer").Value,
+                    ValidIssuer = ValidIssuer,
                     ValidateAudience = true,
-                    ValidAudience = Configuration.GetSection("JWTConfigurations:Audience").Value
+                    ValidAudience = ValidAudience
                 };
             })
             .AddCookie(config =>
@@ -115,8 +122,10 @@ namespace AnimalFarmsMarket.Core
                 config.ForwardAuthenticate = CookieAuthenticationDefaults.AuthenticationScheme;
             }).AddGoogle(options =>
                 {
-                    options.ClientId = Configuration["GoogleConfig:ClientId"];
-                    options.ClientSecret = Configuration["GoogleConfig:ClientSecret"];
+                    // options.ClientId = Configuration["GoogleConfig:ClientId"];
+                    //options.ClientSecret = Configuration["GoogleConfig:ClientSecret"];
+                    options.ClientId = "12678957772-04euuib49rgql29nq26g1bu9etqrpbam.apps.googleusercontent.com";
+                    options.ClientSecret = "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";
                     options.SignInScheme = CookieAuthenticationDefaults.AuthenticationScheme;
                     options.Events.OnRemoteFailure = (context) =>
                     {
@@ -151,7 +160,7 @@ namespace AnimalFarmsMarket.Core
                 var token = context.Session.GetString("Token");
                 if (!string.IsNullOrWhiteSpace(token))
                     context.Request.Headers.Add("Authorization", "Bearer " + token);
-                await next();
+               await next();
             });
 
             app.UseRouting();

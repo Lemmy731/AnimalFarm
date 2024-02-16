@@ -3569,24 +3569,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SAMUEL OLUROTIMI\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Test\\AnimalFarmsMarket.Test.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Test\\AnimalFarmsMarket.Test.csproj",
       "projectName": "AnimalFarmsMarket.Test",
-      "projectPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Test\\AnimalFarmsMarket.Test.csproj",
-      "packagesPath": "C:\\Users\\SAMUEL OLUROTIMI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Test\\obj\\",
+      "projectPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Test\\AnimalFarmsMarket.Test.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Test\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\SAMUEL OLUROTIMI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -3594,7 +3589,6 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -3646,7 +3640,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
   }

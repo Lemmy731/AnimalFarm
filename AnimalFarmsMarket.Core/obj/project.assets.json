@@ -8895,24 +8895,19 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\SAMUEL OLUROTIMI\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+    "C:\\Users\\hp\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Core\\AnimalFarmsMarket.Core.csproj",
+      "projectUniqueName": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Core\\AnimalFarmsMarket.Core.csproj",
       "projectName": "AnimalFarmsMarket.Core",
-      "projectPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Core\\AnimalFarmsMarket.Core.csproj",
-      "packagesPath": "C:\\Users\\SAMUEL OLUROTIMI\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Core\\obj\\",
+      "projectPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Core\\AnimalFarmsMarket.Core.csproj",
+      "packagesPath": "C:\\Users\\hp\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Core\\obj\\",
       "projectStyle": "PackageReference",
-      "fallbackFolders": [
-        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
-      ],
       "configFilePaths": [
-        "C:\\Users\\SAMUEL OLUROTIMI\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+        "C:\\Users\\hp\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -8920,24 +8915,23 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
-        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "netcoreapp3.1": {
           "targetAlias": "netcoreapp3.1",
           "projectReferences": {
-            "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Commons\\AnimalFarmsMarket.Commons.csproj": {
-              "projectPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Commons\\AnimalFarmsMarket.Commons.csproj"
+            "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Commons\\AnimalFarmsMarket.Commons.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Commons\\AnimalFarmsMarket.Commons.csproj"
             },
-            "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Data\\AnimalFarmsMarket.Data.csproj": {
-              "projectPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\AnimalFarmsMarket.Data\\AnimalFarmsMarket.Data.csproj"
+            "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Data\\AnimalFarmsMarket.Data.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\AnimalFarmsMarket.Data\\AnimalFarmsMarket.Data.csproj"
             },
-            "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\DevelopmentMigrations\\DevelopmentMigrations.csproj": {
-              "projectPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\DevelopmentMigrations\\DevelopmentMigrations.csproj"
+            "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\DevelopmentMigrations\\DevelopmentMigrations.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\DevelopmentMigrations\\DevelopmentMigrations.csproj"
             },
-            "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\ProductionMigrations\\ProductionMigrations.csproj": {
-              "projectPath": "C:\\Users\\SAMUEL OLUROTIMI\\Downloads\\livestock-platform\\livestock-platform\\AnimalFarmsMarket\\ProductionMigrations\\ProductionMigrations.csproj"
+            "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\ProductionMigrations\\ProductionMigrations.csproj": {
+              "projectPath": "C:\\Users\\hp\\Desktop\\AnimalFarmMarket\\ProductionMigrations\\ProductionMigrations.csproj"
             }
           }
         }
@@ -9014,12 +9008,6 @@
         ],
         "assetTargetFallback": true,
         "warn": true,
-        "downloadDependencies": [
-          {
-            "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[3.1.31, 3.1.31]"
-          }
-        ],
         "frameworkReferences": {
           "Microsoft.AspNetCore.App": {
             "privateAssets": "none"
@@ -9028,8 +9016,20 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.100\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "NU1902",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Package 'Microsoft.AspNetCore.Authentication.JwtBearer' 3.1.13 has a known moderate severity vulnerability, https://github.com/advisories/GHSA-q7cg-43mg-qp69",
+      "libraryId": "Microsoft.AspNetCore.Authentication.JwtBearer",
+      "targetGraphs": [
+        ".NETCoreApp,Version=v3.1"
+      ]
+    }
+  ]
 }

@@ -17,7 +17,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyProductAttribute("AnimalFarmsMarket.Core")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+8d9a6f1e13aa2bc646dbfb529a62c9ecccf1dbe1")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AnimalFarmsMarket.Core.Views")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
 

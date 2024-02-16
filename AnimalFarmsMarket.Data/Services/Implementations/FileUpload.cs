@@ -17,13 +17,19 @@ namespace AnimalFarmsMarket.Data.Services.Implemantations
         {
             _config = config.Value;
             Account account = new Account(
-                _config.CloudName,
-                _config.ApiKey,
-                _config.ApiSecret
+                "dcrh4ouul",
+                "367471168186368",
+                "mdO6eyIpMHZepHtOLS4kYAZ8rbE"
              );
 
             _cloudinary = new Cloudinary(account);
         }
+
+        //Account account = new Account(
+        //        _config.CloudName,
+        //        _config.ApiKey,
+        //        _config.ApiSecret
+        //     );
 
         public UploadAvatarResponse UploadAvatar(IFormFile file)
         {
